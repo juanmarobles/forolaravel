@@ -43,5 +43,12 @@
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+        
+        <div class="flex justify-end pt-2 ml-3">
+            <a href="{{ route('register') }}" 
+            class="inline-flex items-center bg-slate-500 hover:bg-slate-400 rounded px-4 py-2 bg-contain bg-center
+             text-center font-bold text-white text-xs
+             px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-slate-300 ">REGISTER</a>
+        </div>
     </form>
 </x-guest-layout>

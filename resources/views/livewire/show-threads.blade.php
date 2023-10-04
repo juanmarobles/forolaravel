@@ -4,12 +4,14 @@
     
     <div class="w-full">
         <ul>
+            @foreach($categories as $category)
             <li class="mb-2">
                 <a href="" class="py-2 rounded-md flex bg-slate-800 items-center gap-2 text-white/60 hover:text-white font-semibold text-sm capitalize">
-                <span class="w-2 h-2 rounded-full" style="background-color: #00aced;"></span>    
-                Ejemplo
+                <span class="w-2 h-2 rounded-full" style="background-color: {{ $category -> color}};"></span>    
+                {{ $category -> nombre}}
                 </a>
             </li>
+            @endforeach
             <li>
                 <a href="" class="py-2 rounded-md flex bg-slate-800 items-center gap-2 text-white/60 hover:text-white font-semibold text-sm capitalize">
                 <span class="w-2 h-2 rounded-full" style="background-color: #000;"></span>    
