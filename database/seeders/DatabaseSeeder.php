@@ -18,5 +18,8 @@ class DatabaseSeeder extends Seeder
          \App\Models\Category::factory(10)
             ->has(\App\Models\Thread::factory(20))
             ->create();
+
+            \App\Models\Reply::factory(400)->create();
+
     }
 }

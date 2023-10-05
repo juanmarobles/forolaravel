@@ -40,6 +40,10 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'password' => 'hashed',
+        'password' => 'hashed',  
     ];
+    
+    public function avatar(){
+        return 'https://gravatar.com/avatar/' . md5($this->email) . '?s=50';
+    }
 }
